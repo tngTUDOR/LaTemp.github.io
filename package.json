@@ -1,0 +1,29 @@
+{
+  "name": "latemp.github.io",
+  "version": "0.0.1",
+  "description": "Testing github pages with [11ty](https://www.11ty.dev/).",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf _site && eleventy",
+    "dev": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaTemp/LaTemp.github.io.git"
+  },
+  "author": "Laurent Chion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaTemp/LaTemp.github.io/issues"
+  },
+  "homepage": "https://github.com/LaTemp/LaTemp.github.io#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@picocss/pico": "^1.4.4",
+    "eleventy-plugin-toc": "^1.1.5",
+    "markdown-it": "^12.3.2",
+    "markdown-it-anchor": "^8.4.1",
+    "normalize.css": "^8.0.1"
+  }
+}
