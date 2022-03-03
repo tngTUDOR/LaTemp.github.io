@@ -7,7 +7,8 @@
     "build": "rm -rf _site && eleventy",
     "dev": "eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "npm run build && gh-pages -d _site"
+    "deploy": "npm run build && gh-pages -d _site -t",
+    "d": "gh-pages --help"
   },
   "repository": {
     "type": "git",
