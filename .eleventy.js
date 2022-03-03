@@ -8,10 +8,13 @@ module.exports = function(eleventyConfig){
     eleventyConfig.addPassthroughCopy('.nojekyll');
 
     // add normalize.css
+    eleventyConfig.addPassthroughCopy('css')
     eleventyConfig.addPassthroughCopy({ './node_modules/normalize.css/normalize.css': './css/normalize.css' });
-
     // add normalize.css
     eleventyConfig.addPassthroughCopy({ './node_modules/@picocss/pico/css/pico.min.css': './css/pico.min.css' });
+
+    eleventyConfig.addPassthroughCopy('js')
+    eleventyConfig.addPassthroughCopy('img')
 
     // Markdown
     eleventyConfig.setLibrary(
