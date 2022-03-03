@@ -1,0 +1,45 @@
+/* Global CSS variables */
+:root {
+    --spacing-company: 3rem;
+    --font-weight: 400;
+    --border-radius: 0;
+  }
+  
+  small {
+    color: var(--muted-color);
+  }
+  
+  /* Header */
+  .hero {
+    background-color: #c5d9d0;
+    background-image: url("/img/hero-background.jpg");
+    background-position: top;
+    background-size: cover;
+  }
+  
+  header {
+    padding: var(--spacing-company) 0;
+  }
+  
+  header hgroup > :last-child {
+    color: var(--h3-color);
+  }
+  
+  header hgroup {
+    margin-bottom: var(--spacing-company);
+  }
+  
+  
+  form.grid {
+    grid-row-gap: 0;
+  }
+  
+  /* Aside nav */
+  aside img {
+    margin-bottom: 0.25rem;
+  }
+  
+  aside p {
+    margin-bottom: var(--spacing-company);
+    line-height: 1.25;
+  }
