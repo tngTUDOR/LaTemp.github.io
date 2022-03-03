@@ -16,5 +16,5 @@ You can install it using [conda](https://anaconda.org/conda-forge/nodejs) or [as
 ## How to deploy
 
 There is two ways to deploy changes:
-- one is torun: `npm run deploy`
+- one is to run: `npm run deploy`
 - the other is to push to main branch

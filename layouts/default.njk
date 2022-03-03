@@ -1,35 +1,99 @@
 ---
-title: LaTemp.github.io
+layout: root
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-
-    <link href="/css/normalize.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="/css/pico.min.css" />
-  </head>
-
   <body>
+
+    <div class="hero" data-theme="dark">
+      <header class="container">
+          <hgroup>
+            <img src="img/logo.svg" id="logo"/>
+            <h1>Brightcon 2021</h1>
+            <h2>Open Sustainability Conference</h2>
+          </hgroup>
+          <p>
+            <a href="#" role="button" onclick="event.preventDefault()">Call for paper</a>
+            <a href="#" role="button" onclick="event.preventDefault()">Register</a>
+          </p>
+      </header>
+      <nav class="container-fluid">
+        <ul></ul>
+        <ul>
+            <li><a href="#" class="contrast" data-theme-switcher="light">Light</a></li>
+            <li><a href="#" class="contrast" data-theme-switcher="dark">Dark</a></li>
+          </ul>
+      </nav>
+    </div>
+
+
     <nav class="container-fluid">
-      <ul>
-        <li><strong>Brightcon 2021</strong></li>
-        <li>Open Sustainability Conference</li>
-      </ul>
-
+      <ul></ul>
       {{ content | toc | safe  }}
-
     </nav>
 
     <main class="container">
-    <article>
+      <section class="grid">
+
+        <div>
+           <strong>Golden sponsors </strong>
+            <a href="#" aria-label="Sponsor 1" onclick="event.preventDefault()"><img src="http://placehold.jp/325x110.png" alt="Sponsor 1"></a>
+        </div>
+
+         <div>
+            <strong>Silver sponsors </strong>
+           <a href="#" aria-label="Sponsor 2 " onclick="event.preventDefault()"><img src="http://placehold.jp/325x110.png" alt="Sponsor 2"></a>
+            <a href="#" aria-label="Sponsor 4" onclick="event.preventDefault()"><img src="http://placehold.jp/325x110.png" alt="Sponsor 4"></a>
+        </div>
+        
+         <div>
+            <strong>Wood sponsors </strong>
+            <a href="#" aria-label="Sponsor 3" onclick="event.preventDefault()"><img src="http://placehold.jp/325x110.png" alt="Sponsor 3"></a>
+        </div>
+      </section>
+
+      <hr />
+
+      <div class="grid">
+
+      <section>
         {{ content | safe }}
-    </article>
+      </section>
+      
+      <!-- <aside>
+        <strong>Golden sponsors </strong>
+        <br />
+        <a href="#" aria-label="Sponsor 1" onclick="event.preventDefault()"><img src="http://placehold.jp/325x110.png" alt="Sponsor 1"></a>
+       
+        <hr />
+        <strong>Silver sponsors </strong>
+        <br />
+        <a href="#" aria-label="Sponsor 2 " onclick="event.preventDefault()"><img src="http://placehold.jp/325x110.png" alt="Sponsor 2"></a>
+        <a href="#" aria-label="Sponsor 3 " onclick="event.preventDefault()"><img src="http://placehold.jp/325x110.png" alt="Sponsor 2"></a>
+
+        <hr />
+        <strong>Wood sponsors </strong>
+        <br />
+        <a href="#" aria-label="Sponsor 4" onclick="event.preventDefault()"><img src="http://placehold.jp/325x110.png" alt="Sponsor 3"></a>
+      </aside> -->
+    </div>
+
     </main>
 
+    <footer class="container">
+      <small>Built with <a href="https://picocss.com">Pico</a> • <a href="https://github.com/LaTemp/LaTemp.github.io">Source code</a></small>
+    </footer><!-- ./ Footer -->
+
   </body>
+
+   <!-- Minimal theme switcher -->
+  <script src="/js/minimal-theme-switcher.js"></script>
+
+  <style>
+    #logo {
+      float: left;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
 
 </html>

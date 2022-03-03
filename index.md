@@ -2,6 +2,9 @@
 title: Brightcon 2022
 --- 
 
+
+
+
 # September 2022, Belval Luxembourg
 
 Brightcon 2022 will take place on the second half of September 2022, in [Belval, Luxembourg] on [LIST](https://www.list.lu) premises.
