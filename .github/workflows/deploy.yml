@@ -1,5 +1,5 @@
 name: Publish website
-description: Build and push to gh-pages branch.
+# description: Build and push to gh-pages branch.
 on: [push]
 jobs:
   build-and-deploy:
