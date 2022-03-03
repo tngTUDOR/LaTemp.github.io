@@ -4,6 +4,9 @@ const pluginTOC = require('eleventy-plugin-toc')
 
 module.exports = function(eleventyConfig){
 
+    // add .nojekyll file to not use it
+    eleventyConfig.addPassthroughCopy('.nojekyll');
+
     // add normalize.css
     eleventyConfig.addPassthroughCopy({ './node_modules/normalize.css/normalize.css': './css/normalize.css' });
 
